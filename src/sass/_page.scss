@@ -18,6 +18,7 @@ h1, input, span {
     font-family: 'Big Shoulders Text', sans-serif;
 }
 .heading-container {
+    display: block!important;
     margin: 3rem auto 0;
     .h1 {
         margin: 0 auto 2rem;
@@ -37,8 +38,18 @@ h1, input, span {
     .form-control::placeholder {
         color: lighten($color-detail, 40%);
     }
+    .btn {
+        margin-top: 2%;
+        height: 6%;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+    }
+    .image-container {
+        display: flex;
+        justify-content: center;
+    }
     .weather-icon {
-        margin: 2vh auto 0;
+        margin: 0 auto;
         width: 8rem;
         height: 8rem;
     }
@@ -150,7 +161,7 @@ h1, input, span {
         .h1 {
             font-size: 4rem;
         }
-        .form-control {
+        .form-control, .btn {
             font-size: 1.5rem;
         }
         .weather-icon {
@@ -170,7 +181,7 @@ h1, input, span {
         .h1 {
             font-size: 5rem;
         }
-        .form-control {
+        .form-control, .btn {
             font-size: 2rem;
         }
         .weather-icon {

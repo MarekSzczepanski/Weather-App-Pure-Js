@@ -167,6 +167,9 @@ h1, input, span {
         .h1 {
             font-size: 5rem;
         }
+        .form-control {
+            font-size: 2rem;
+        }
         .weather-icon {
             width: 16rem;
             height: 16rem;
@@ -177,6 +180,9 @@ h1, input, span {
         .value-span {
             font-size: 3rem;
         }
+    }
+    .credits {
+        font-size: 1.2rem;
     }
 }
 @media (min-width: 1600px) {

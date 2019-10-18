@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log(\"test\");\nvar log;\nvar icon;\nvar url = \"https://api.openweathermap.org/data/2.5/weather?q=new york&APPID=ee37e5abb8ef2c3cf384075cf513d7e0\";\nfetch(url).then(function (response) {\n  return response.json();\n}).then(function (json) {\n  document.querySelector(\"img\").src = \"http://openweathermap.org/img/wn/\".concat(json.weather[0].icon, \"@2x.png\"), document.querySelector(\".temperature-value\").textContent = Math.floor(json.main.temp - 273.15) + \"°C\", document.querySelector(\".humidity-value\").textContent = json.main.humidity + \"%\";\n  document.querySelector(\".wind-value\").textContent =\n  /* json.wind.speed */\n  88.8 + \" m/s\", console.log(json);\n});\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("console.log(\"test\");\nvar log;\nvar icon;\nvar url = \"https://api.openweathermap.org/data/2.5/weather?q=new york&APPID=ee37e5abb8ef2c3cf384075cf513d7e0\";\nfetch(url).then(function (response) {\n  return response.json();\n}).then(function (json) {\n  document.querySelector(\"img\").src = \"https://openweathermap.org/img/wn/\".concat(json.weather[0].icon, \"@2x.png\"), document.querySelector(\".temperature-value\").textContent = Math.floor(json.main.temp - 273.15) + \"°C\", document.querySelector(\".humidity-value\").textContent = json.main.humidity + \"%\";\n  document.querySelector(\".wind-value\").textContent =\n  /* json.wind.speed */\n  88.8 + \" m/s\", console.log(json);\n});\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ })
 

@@ -8,7 +8,7 @@ fetch(url)
 })
 .then(
     json => {
-        document.querySelector("img").src = `http://openweathermap.org/img/wn/${json.weather[0].icon}@2x.png`,
+        document.querySelector("img").src = `https://openweathermap.org/img/wn/${json.weather[0].icon}@2x.png`,
         document.querySelector(".temperature-value").textContent = Math.floor(json.main.temp - 273.15) + "°C", 
         document.querySelector(".humidity-value").textContent = json.main.humidity + "%"
         document.querySelector(".wind-value").textContent = /* json.wind.speed */ 88.8 + " m/s", 

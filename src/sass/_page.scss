@@ -63,6 +63,7 @@ h1, input, span {
         height: 80%;
         background: $color-secondary;
         padding: 0;
+        border-radius: 10%;
     }
     .icon {
         width: auto;
@@ -158,6 +159,40 @@ h1, input, span {
         height: 11rem;
         .value-span {
             font-size: 2rem;
+        }
+    }
+}
+@media (min-width: 1400px) {
+    .heading-container {
+        .h1 {
+            font-size: 5rem;
+        }
+        .weather-icon {
+            width: 16rem;
+            height: 16rem;
+        }
+    }
+    .weather-values {
+        height: 15rem;
+        .value-span {
+            font-size: 3rem;
+        }
+    }
+}
+@media (min-width: 1600px) {
+    .heading-container {
+        .h1 {
+            font-size: 6rem;
+        }
+        .weather-icon {
+            width: 17rem;
+            height: 17rem;
+        }
+    }
+    .weather-values {
+        height: 18rem;
+        .value-span {
+            font-size: 3.5rem;
         }
     }
 }

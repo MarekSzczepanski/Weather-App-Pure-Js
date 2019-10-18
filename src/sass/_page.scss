@@ -150,13 +150,16 @@ h1, input, span {
         .h1 {
             font-size: 4rem;
         }
+        .form-control {
+            font-size: 1.5rem;
+        }
         .weather-icon {
             width: 14rem;
             height: 14rem;
         }
     }
     .weather-values {
-        height: 11rem;
+        height: 14rem;
         .value-span {
             font-size: 2rem;
         }

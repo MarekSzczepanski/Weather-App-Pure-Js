@@ -11,7 +11,7 @@ fetch(url)
         document.querySelector("img").src = `http://openweathermap.org/img/wn/${json.weather[0].icon}@2x.png`,
         document.querySelector(".temperature-value").textContent = Math.floor(json.main.temp - 273.15) + "°C", 
         document.querySelector(".humidity-value").textContent = json.main.humidity + "%"
-        document.querySelector(".wind-value").textContent = json.wind.speed + "m/s", 
+        document.querySelector(".wind-value").textContent = /* json.wind.speed */ 88.8 + " m/s", 
         console.log(json)
     }, 
 )

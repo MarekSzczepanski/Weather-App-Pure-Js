@@ -9,24 +9,48 @@
 </head>
 <body>
     <div class="container">
-        <div class="row col-10 heading-container">
+        <div class="row col-10 col-md-8 col-lg-7 heading-container">
             <h1 class="h1">your weather checker</h1>
             <input class="form-control" type="text" placeholder="Type your city...">
             <img class="weather-icon">
         </div> 
     </div>
     <div class="container">
-        <div class="row col-12 weather-values">
-            <div class="temperature-icon">
-                <img src="../public/images/temperature32.png" class="icon">
+        <div class="row col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6 weather-values">
+            <div class="col-3 temperature">
+                <img 
+                    srcset="
+                        ../public/images/temperature32.png 100w,
+                        ../public/images/temperature64.png 576w,
+                    "
+                    src="../public/images/temperature32.png" 
+                    class="icon"
+                    alt="temperature"
+                >
                 <span class="value-span temperature-value"></span>
             </div>
-            <div class="humidity-icon">
-                <img src="../public/images/humidity32.png" class="icon">
+            <div class="col-3 humidity">
+                <img 
+                    srcset="
+                        ../public/images/humidity32.png 100w,
+                        ../public/images/humidity64.png 576w,
+                    "
+                    src="../public/images/humidity32.png" 
+                    class="icon"
+                    alt="humidity"
+                >
                 <span class="value-span humidity-value"></span>
             </div>
-            <div class="wind-icon">
-                <img src="../public/images/wind32.png" class="icon">
+            <div class="col-3 wind">
+                <img 
+                    srcset="
+                        ../public/images/wind32.png 100w,
+                        ../public/images/wind64.png 576w,
+                    "
+                    src="../public/images/wind32.png" 
+                    class="icon"
+                    alt="wind"
+                >
                 <span class="value-span wind-value"></span>
             </div>
         </div>

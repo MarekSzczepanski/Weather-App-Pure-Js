@@ -12,7 +12,7 @@ body {
     background: $color-primary;
     min-height: 100vh;
     border: solid 3px $color-secondary;
-    overflow: hidden;
+    
 }
 h1, input, span {
     font-family: 'Big Shoulders Text', sans-serif;
@@ -39,70 +39,125 @@ h1, input, span {
     }
     .weather-icon {
         margin: 2vh auto 0;
+        width: 8rem;
+        height: 8rem;
     }
     .weather-values {
-        width: 100%;
         height: 5rem;
     }
 }
 .weather-values {
     display: flex;
+    justify-content: space-around;
     width: 100%;
     height: 7rem;
-    margin: 0 auto 0;
-    justify-content: space-around;
+    margin: 0 auto 5vh;
     padding: 0;
     & div {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 5rem;
-        height: 5rem;
+        min-width: 5rem;
+        min-height: 5rem;
+        height: 80%;
         background: $color-secondary;
+        padding: 0;
     }
     .icon {
-        width: 40%;
+        width: auto;
         height: 40%;
         padding-top: 2%;
     }
     .value-span {
-        padding-top: 5%;
-        font-size: 1.5rem;
+        padding-top: 12%;
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
     }
 }
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100vw;
     height: 5vh;
     background: $color-secondary;
     .credits {
-        font-size: .6rem;
+        font-size: .8rem;
     }
     .credits-link {
-        color: $color-primary;
+        color: darken($color-primary, 30%);
     }
 }
-// Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
-     
+    .heading-container {
+        margin-top: 4rem;
+        .h1 {
+            font-size: 2.8rem;
+        }
+        .weather-icon {
+            width: 10rem;
+            height: 10rem;
+        }
+    }
+     .weather-values {
+        height: 8rem;
+        .value-span {
+            font-size: 1.4rem;
+        }
+     }
 }
-
-// Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    
+    .heading-container {
+        .h1 {
+            font-size: 3.2rem;
+        }
+        .weather-icon {
+            width: 13rem;
+            height: 13rem;
+        }
+    }
+    .weather-values {
+        height: 9rem;
+        .value-span {
+            font-size: 1.7rem;
+        }
+    }
 }
-
-// Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-     
+    .heading-container {
+        margin-top: 5rem;
+        .h1 {
+            font-size: 3.7rem;
+        }
+        .weather-icon {
+            width: 13rem;
+            height: 13rem;
+        }
+    }
+    .weather-values {
+        height: 10rem;
+        .value-span {
+            font-size: 1.9rem;
+        }
+    }
 }
-
-// Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-     
+    .heading-container {
+        .h1 {
+            font-size: 4rem;
+        }
+        .weather-icon {
+            width: 14rem;
+            height: 14rem;
+        }
+    }
+    .weather-values {
+        height: 11rem;
+        .value-span {
+            font-size: 2rem;
+        }
+    }
 }
